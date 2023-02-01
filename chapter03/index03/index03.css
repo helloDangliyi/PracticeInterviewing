@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+.blue, .red-inner {
+  height: 50px;
+  margin: 10px 0;
+}
+
+.blue {
+  background: blue;
+}
+
+.red-inner {
+  background-color: aqua;
+}
+
+.red-outer {
+  overflow: hidden;
+  background: red;
+}
+

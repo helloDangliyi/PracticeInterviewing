@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>包含内部浮动</title>
+  <link rel="stylesheet" href="./index01.css">
+</head>
+
+<body>
+  <!-- https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context -->
+  <!-- https://www.jianshu.com/p/66632298e355 -->
+
+  <!-- float的值不为none,会创建块级上下文。 -->
+  <!-- 清除浮动（让父元素的高度包含子浮动元素）: 父元素使用：overflow:auto，display:flow-root,就会创建新的BFC -->
+  <section>
+    
+    <div class="box">
+      <div class="float">I am a floated box!</div>
+      <p>I am content inside the container.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="box" style="overflow:auto">
+      <div class="float">I am a floated box!</div>
+      <p>I am content inside the <code>overflow:auto</code> container.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="box" style="display:flow-root">
+      <div class="float">I am a floated box!</div>
+      <p>I am content inside the <code>display:flow-root</code> container.</p>
+    </div>
+  </section>
+  
+</body>
+</html>

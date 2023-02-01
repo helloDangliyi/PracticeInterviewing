@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>排除外部浮动(自适应两栏布局)</title>
+  <link rel="stylesheet" href="./index02.css">
+</head>
+<body>
+  <!-- 给浮动的元素设置  overflow: hidden; -->
+  <section>
+    <div class="float">Try to resize this outer float</div>
+    <div class="box">
+      <p>Normal</p>
+    </div>
+  </section>
+  
+  <section>
+    <div class="float">Try to resize this outer float</div>
+    <div class="box" style="display:flow-root">
+      <p>
+        <code>display:flow-root</code>
+      <p>
+    </div>
+  </section>
+  
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外边距重叠</title>
+  <link rel="stylesheet" href="./index03.css">
+</head>
+<body>
+
+  <!-- 给可能重叠的元素添加一个父元素，设置为overflow: hidden。就触发该容器生成一个BFC，就不会发生margin重叠了 -->
+  <div class="blue"></div>
+
+  <div class="red-outer">
+      <div class="red-inner">red inner</div>
+  </div>
+
+</body>
+</html>
