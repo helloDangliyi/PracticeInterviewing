@@ -7,13 +7,18 @@
   <title>外边距重叠</title>
   <link rel="stylesheet" href="./index03.css">
 </head>
-<body>
+<body>  
 
   <!-- 给可能重叠的元素添加一个父元素，设置为overflow: hidden。就触发该容器生成一个BFC，就不会发生margin重叠了 -->
   <div class="blue"></div>
 
   <div class="red-outer">
       <div class="red-inner">red inner</div>
+  </div>
+
+
+  <div id="parent">
+    <div id="child"></div>
   </div>
 
 </body>
