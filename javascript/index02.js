@@ -6,6 +6,8 @@ if(true) {
 }
 console.log(c);
 
+
+// 闭包
 var globalVar = null; // 全局变量
 var fn = function () {
     var originVal = globalVar; // 局部变量
