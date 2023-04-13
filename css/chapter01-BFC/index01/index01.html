@@ -14,8 +14,8 @@
   <!-- https://segmentfault.com/a/1190000023094591 -->
 
   <!-- float的值不为none,会创建块级上下文。 -->
-  <!-- 清除浮动（让父元素的高度包含子浮动元素）: 父元素使用：overflow:auto，display:flow-root,就会创建新的BFC -->
-  <section>
+  <!-- 触发BFC:清除浮动（让父元素的高度包含子浮动元素）: 父元素使用：overflow:auto，display:flow-root,就会创建新的BFC -->
+  <section> 
     
     <div class="box">
       <div class="float">I am a floated box!</div>
