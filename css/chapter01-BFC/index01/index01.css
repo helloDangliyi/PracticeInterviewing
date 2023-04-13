@@ -21,8 +21,9 @@ section {
   padding: 10px;
 }
 
+/* 给父元素添加类，来清除浮动 */
 .box3::after{
   content:'';
-  display:block;
+  display:table;
   clear:both;
 }
