@@ -2,9 +2,18 @@ let d = 3
 
 if(true) {
   var c = 3;
-  console.log(d);
+  console.log('d',d);
 }
-console.log(c);
+console.log('c',c);
+
+
+if(true) {
+  let e = 3
+  var f = 3;
+}
+
+console.log('2e',e); //不可以跨块访问
+console.log('2f',f);//可以跨块访问
 
 
 // 闭包
