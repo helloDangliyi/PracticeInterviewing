@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONP 演示</title>
+</head>
+<body>
+    <p>一段文字</p>
+
+    <script>
+        window.callback = function (data) {
+            console.log(data);
+        }
+    </script>
+    <!-- 自己写的，并没有形成跨域 -->
+    <!-- <script src="http://localhost:8080/data/jsonp.js?username=xxx&callback=abc"></script> -->
+    <script src="http://coding.m.imooc.com/api.js"></script>
+    
+</body>
+</html>
